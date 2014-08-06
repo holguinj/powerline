@@ -569,28 +569,28 @@ mouse-1: Display Line and Column Mode Menu")
   '(progn
      (defface powerline-evil-insert-face
        '((((class color))
-          :foreground "white" :background "royal blue" :weight bold :inherit mode-line)
+          :foreground "white" :background "DeepSkyBlue4" :weight bold :inherit mode-line)
          (t (:weight bold)))
        "face to fontify evil insert state"
        :group 'powerline)
 
      (defface powerline-evil-normal-face
        '((((class color))
-          :foreground "white" :background "yellow green" :weight bold :inherit mode-line)
+          :foreground "DarkGreen" :background "OliveDrab2" :weight bold :inherit mode-line)
          (t (:weight bold)))
        "face to fontify evil normal state"
        :group 'powerline)
 
      (defface powerline-evil-visual-face
        '((((class color))
-          :foreground "white" :background "orange" :weight bold :inherit mode-line)
+          :foreground "black" :background "orange" :weight bold :inherit mode-line)
          (t (:weight bold)))
        "face to fontify evil visual state"
        :group 'powerline)
 
      (defface powerline-evil-motion-face
        '((((class color))
-          :foreground "white" :background "blue" :weight bold :inherit mode-line)
+          :foreground "DarkSlateGrey" :background "blue" :weight bold :inherit mode-line)
          (t (:weight bold)))
        "face to fontify evil motion state"
        :group 'powerline)
@@ -611,7 +611,7 @@ mouse-1: Display Line and Column Mode Menu")
 
      (defface powerline-evil-operator-face
        '((((class color))
-          :foreground "white" :background "sky blue" :weight bold :inherit mode-line)
+          :foreground "DarkSlateGrey" :background "sky blue" :weight bold :inherit mode-line)
          (t (:weight bold)))
        "face to fontify evil replace state"
        :group 'powerline)
@@ -635,6 +635,10 @@ mouse-1: Display Line and Column Mode Menu")
          " NORMAL ")
         ((evil-insert-state-p)
          " INSERT ")
+        ((evil-emacs-state-p)
+         " EMACS ")
+        ((evil-operator-state-p)
+         " O-PENDING ")
         (t
          evil-mode-line-tag)))
      ))
