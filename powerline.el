@@ -569,14 +569,14 @@ mouse-1: Display Line and Column Mode Menu")
   '(progn
      (defface powerline-evil-insert-face
        '((((class color))
-          :foreground "white" :background "green" :weight bold :inherit mode-line)
+          :foreground "white" :background "royal blue" :weight bold :inherit mode-line)
          (t (:weight bold)))
        "face to fontify evil insert state"
        :group 'powerline)
 
      (defface powerline-evil-normal-face
        '((((class color))
-          :foreground "white" :background "red" :weight bold :inherit mode-line)
+          :foreground "white" :background "yellow green" :weight bold :inherit mode-line)
          (t (:weight bold)))
        "face to fontify evil normal state"
        :group 'powerline)
